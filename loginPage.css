@@ -77,7 +77,9 @@ body {
     font-size: 12px;
     color: #000000;
 }
-
+.login_button {
+    margin-bottom: 10px;
+}
 .login_btn {
     padding: 12px 114.5px;
     border-radius: 5px;
@@ -86,6 +88,9 @@ body {
     font-weight: 600;
     color: #ffffff;
     background: linear-gradient(180deg, #edb9b9, #e1d7d7);
+}
+.register_btn {
+    padding: 12px 107px;
 }
 .login_btn:hover {
     background: linear-gradient(180deg, #ff7b7b, #c6b4b4);
