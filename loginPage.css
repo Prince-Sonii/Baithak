@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(90deg, #a6a6a6, #ffffff);
+}
+.main_container {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+}
+.items {
+    margin:30px 50px;
+}
+.logo_text {
+    margin: 30px 0px;
+}
+.logo_txt {
+    font-size: 40px;
+}
+.slogan {
+    margin: 30px 0px;
+}
+.slogan_text {
+    font-size: 24px;
+}
+.features_card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0px;
+}
+.image_card {
+    width: 100%;
+    height: fit-content;
+    /* background-color: #ffffff; */
+}
+.building_image {
+    width: 100%;
+    height: 485px;
+    mix-blend-mode:hard-light
+}
+.right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.login_box {
+    margin: 60px 0px;
+}
+.login_text {
+    font-size: 28px;
+    text-align: center;
+}
+.login_cred {
+    margin: 100px 140px;
+    /* max-width: 5px; */
+}
+.login_input {
+    margin: 11px 0px;
+    padding: 10px 110px 13px 5px;
+    background: linear-gradient(180deg, #a6a6a6,#ffffff);
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    
+}   
+::placeholder {
+    font-size: 12px;
+    color: #000000;
+}
+
+.login_btn {
+    padding: 12px 114.5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(180deg, #edb9b9, #e1d7d7);
+}
+.login_btn:hover {
+    background: linear-gradient(180deg, #ff7b7b, #c6b4b4);
+    cursor: pointer;
+}
+.summary {  
+    margin-top: 200px;
+    text-align: center;
+}
