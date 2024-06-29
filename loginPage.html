@@ -47,26 +47,27 @@
                 </div>
                 <div class="login_cred">
                     <div class="username">
-                        <input type="text" name="" id="" class="login_input" placeholder="EMAIL OR USERNAME">
+                        <input type="text" class="login_input" placeholder="EMAIL OR USERNAME" id="username">
                     </div>
                     <div class="password">
-                        <input type="password" name="" class="login_input" placeholder="PASSWORD">
+                        <input type="password" class="login_input" placeholder="PASSWORD" id="password">
                     </div>
                     <div class="login_button">
-                        <button type="submit" class="login_btn">Log in</button>
+                        <button type="submit" class="login_btn" onclick="login()">Log in</button>
                     </div>
                     <div class="login_button">
-                        <button type="submit" class="login_btn register_btn">Register</button>
+                        <button type="submit" class="login_btn" onclick="register()">Register</button>
                     </div>
                 </div>
+                <div id="message" class="message">mwqiwikqnwn</div>
             </div>
             <div class="summary">
-                <p class="summar_text">Baithak is a collaborative tool designed for seamless 
+                <p class="summar_text">Baithak is a collaborative tool designed for seamless
                     communication and teamwork, featuring chat and project management.</p>
             </div>
         </div>
     </main>
-
+    <script src="loginPage.js"></script>
 </body>
 
 </html>
