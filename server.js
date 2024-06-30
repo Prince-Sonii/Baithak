@@ -33,7 +33,7 @@ app.get("/image",(req,res)=>{
   res.sendFile(path.join(__dirname, "/images/building_image2.jpg"));
 })
 app.get("/",(req,res)=>{
-  res.sendFile(path.join(__dirname,"loginPage.html"));
+  res.sendFile(path.join(__dirname,"index.html"));
 })
 app.get("/js/loginPage.js",(req,res)=>{
   res.sendFile(path.join(__dirname,"loginPage.js"));
