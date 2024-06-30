@@ -26,14 +26,14 @@ db.serialize(() => {
     `);
 });
 // login page
+app.get("/",(req,res)=>{
+  res.sendFile(path.join(__dirname,"loginPage.html"));
+})
 app.get("/css/loginPage.css",(req,res)=>{
   res.sendFile(path.join(__dirname, "loginPage.css"));
 })
 app.get("/image",(req,res)=>{
   res.sendFile(path.join(__dirname, "/images/building_image2.jpg"));
-})
-app.get("/",(req,res)=>{
-  res.sendFile(path.join(__dirname,"loginPage.html"));
 })
 app.get("/js/loginPage.js",(req,res)=>{
   res.sendFile(path.join(__dirname,"loginPage.js"));
