@@ -8,5 +8,6 @@ sendButton.addEventListener("click",()=>{
     const outerBox = document.createElement("p");
     outerBox.className = "user_message";
     outerBox.innerText = message;
-    displayMessage.prepend(outerBox);  
+    displayMessage.appendChild(outerBox);
+    outerBox.scrollIntoView(false); 
 })

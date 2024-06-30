@@ -47,11 +47,13 @@ async function login() {
 
     const result = await response.json();
     const messageElement = document.getElementById("message");
-
+    let checkNull = "";
     if (response.status === 200) {
       // messageElement.textContent = result.message;
       // messageElement.style.color = "green";
-      window.open("index.html");
+      if(username.value!=checkNull && password.value!=checkNull) {
+        window.open("index.html" ,"_self");
+      }
     } else {
       messageElement.textContent = result.message;
       messageElement.style.color = "red";

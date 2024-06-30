@@ -44,6 +44,18 @@ app.get("/index.html",(req,res)=>{
 app.get("/css/indexStyle.css",(req,res)=>{
   res.sendFile(path.join(__dirname,"indexStyle.css"));
 })
+app.get("/js/index.js",(req,res)=>{
+  res.sendFile(path.join(__dirname,"index.js"));
+})
+app.get("/css/baithak.css",(req,res)=>{
+  res.sendFile(path.join(__dirname,"baithak.css"));
+})
+app.get("/js/baithak.js",(req,res)=>{
+  res.sendFile(path.join(__dirname,"baithak.js"));
+})
+app.get("/baithak.html",(req,res)=>{
+  res.sendFile(path.join(__dirname,"baithak.html"));
+})
 
 
 // Endpoint for user registration
