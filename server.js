@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors"); // Import cors module
+const path = require("path");
 const app = express();
 const port = 3000;
 
@@ -24,6 +25,26 @@ db.serialize(() => {
         )
     `);
 });
+// login page
+app.get("/css/loginPage.css",(req,res)=>{
+  res.sendFile(path.join(__dirname, "loginPage.css"));
+})
+app.get("/image",(req,res)=>{
+  res.sendFile(path.join(__dirname, "/images/building_image2.jpg"));
+})
+app.get("/",(req,res)=>{
+  res.sendFile(path.join(__dirname,"loginPage.html"));
+})
+app.get("/js/loginPage.js",(req,res)=>{
+  res.sendFile(path.join(__dirname,"loginPage.js"));
+})
+app.get("/index.html",(req,res)=>{
+  res.sendFile(path.join(__dirname,"index.html"));
+})
+app.get("/css/indexStyle.css",(req,res)=>{
+  res.sendFile(path.join(__dirname,"indexStyle.css"));
+})
+
 
 // Endpoint for user registration
 app.post("/register", (req, res) => {

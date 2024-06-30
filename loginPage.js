@@ -1,3 +1,6 @@
+const express = require("express");
+const path = require("path");
+const baithak = express();
 async function register() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
@@ -46,8 +49,9 @@ async function login() {
     const messageElement = document.getElementById("message");
 
     if (response.status === 200) {
-      messageElement.textContent = result.message;
-      messageElement.style.color = "green";
+      // messageElement.textContent = result.message;
+      // messageElement.style.color = "green";
+      window.open("index.html");
     } else {
       messageElement.textContent = result.message;
       messageElement.style.color = "red";
