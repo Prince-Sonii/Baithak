@@ -52,7 +52,7 @@ async function login() {
       // messageElement.textContent = result.message;
       // messageElement.style.color = "green";
       if(username.value!=checkNull && password.value!=checkNull) {
-        window.open("index.html" ,"_self");
+        window.open("main.html" ,"_self");
       }
     } else {
       messageElement.textContent = result.message;
