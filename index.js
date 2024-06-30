@@ -29,28 +29,28 @@ db.serialize(() => {
 app.get("/",(req,res)=>{
   res.sendFile(path.join(__dirname,"loginPage.html"));
 })
-app.get("/css/loginPage.css",(req,res)=>{
+app.get("/loginPage.css",(req,res)=>{
   res.sendFile(path.join(__dirname, "loginPage.css"));
 })
 app.get("/image",(req,res)=>{
   res.sendFile(path.join(__dirname, "/images/building_image2.jpg"));
 })
-app.get("/js/loginPage.js",(req,res)=>{
+app.get("/loginPage.js",(req,res)=>{
   res.sendFile(path.join(__dirname,"loginPage.js"));
 })
 app.get("/main.html",(req,res)=>{
   res.sendFile(path.join(__dirname,"main.html"));
 })
-app.get("/css/main.css",(req,res)=>{
+app.get("/main.css",(req,res)=>{
   res.sendFile(path.join(__dirname,"main.css"));
 })
-app.get("/js/main.js",(req,res)=>{
+app.get("/main.js",(req,res)=>{
   res.sendFile(path.join(__dirname,"main.js"));
 })
-app.get("/css/baithak.css",(req,res)=>{
+app.get("/baithak.css",(req,res)=>{
   res.sendFile(path.join(__dirname,"baithak.css"));
 })
-app.get("/js/baithak.js",(req,res)=>{
+app.get("/baithak.js",(req,res)=>{
   res.sendFile(path.join(__dirname,"baithak.js"));
 })
 app.get("/baithak.html",(req,res)=>{
